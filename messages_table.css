@@ -1,0 +1,75 @@
+body {
+    background-color: white;
+}
+
+#messages {
+    border-collapse:collapse;
+    border-spacing: 0;
+    text-align: left;
+    table-layout: fixed;
+}
+
+#messages th {
+    border-top: #1e1814 solid 1px;
+    border-left: #1e1814 solid 1px;
+}
+
+#messages #msg_origin {
+    text-align: center;
+    font-size: 2em;
+    background-color: #9e8e85;
+    color: #1e1814;
+}
+
+#messages #msg_type {
+    width: 15%;
+    vertical-align: top;
+    font-size: 2em;
+    background-color: #9e8e85;
+    color: #1e1814;
+}
+
+#incoming, #private, #outgoing {
+    width: 33%;
+}
+
+#messages th, td {
+    padding: 10px;
+    border-bottom: #1e1814 solid 1px;
+    border-right: #1e1814 solid 1px;
+}
+
+#messages th {
+    font-size: 1.5em;
+    background-color: #423731;
+    color: #f9f2e5;
+}
+
+#messages td:nth-child(2n+1) {
+    background-color: #9e8e85;
+    color: #f9f2e5
+}
+
+#messages td:nth-child(2n) {
+    background-color: #f9f2e5;
+    color: #1e1814;
+}
+
+#messages tr:first-child th:first-child {
+    border-top-left-radius: 6px;
+}
+
+#messages tr:first-child th:last-child {
+    border-top-right-radius: 6px;
+}
+
+#messages tr:last-child th:first-child {
+    border-bottom-left-radius: 6px;
+}
+
+#messages tr:last-child td:last-child {
+border-bottom-right-radius: 6px;
+}
+
+
+

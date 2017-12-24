@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="messages_table.css">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<table id="messages">
+    <tr>
+        <th id="msg_type">Message Type</th>
+        <th id="msg_origin" colspan="3">Message Origin</th>
+    </tr>
+    <tr>
+        <th></th>
+        <th id="incoming">Incoming</th>
+        <th id="private">Private</th>
+        <th id="outgoing">Outgoing</th>
+    </tr>
+     <tr>
+        <th>Query</th>
+         <td>Test returned value</td>
+         <td>Do not test</td>
+         <td>Do not test</td>
+    </tr>
+    <tr>
+        <th>Command</th>
+         <td>Test change of value</td>
+         <td>Do not test</td>
+         <td>Test if sent out with correct parameters (use Mock to simulate external object)</td>
+    </tr>
+</table>
