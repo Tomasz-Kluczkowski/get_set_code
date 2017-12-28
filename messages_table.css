@@ -16,42 +16,66 @@ background-color: rgba(128, 128, 140, 0.90);
 #messages th {
     border-top: #1e1814 solid 1px;
     border-left: #1e1814 solid 1px;
+    background-color: #423731;
+    color: #f9f2e5;
+		line-height: 1.2em;
 }
+
+@media only screen and (max-width: 980px) {
+    #messages #msg_origin, #messages #msg_type, #messages th {
+        font-size: 1em;
+        font-weight: bold;
+    }
+    #content-area #messages th, #messages td {
+        padding: 2px;
+    }
+	#messages #msg_type {
+		width: auto;
+	}
+}
+
+@media only screen and (min-width: 981px) {
+    #messages #msg_origin, #messages #msg_type {
+        font-size: 2em;
+    }
+    #messages th {
+        font-size: 1.5em;
+    }
+    #content-area #messages th, #messages td {
+        padding: 10px;
+    }
+	#messages #msg_type {
+	width: 30%;
+	}
+}
+
+#messages #msg_origin, #messages #msg_type {
+background-color: #9e8e85;
+color: #1e1814;
+}
+
 
 #messages #msg_origin {
     text-align: center;
-    font-size: 2em;
-    background-color: #9e8e85;
-    color: #1e1814;
 }
 
 #messages #msg_type {
-    width: 15%;
     vertical-align: top;
-    font-size: 2em;
-    background-color: #9e8e85;
-    color: #1e1814;
 }
 
-#incoming, #private, #outgoing {
+#outgoing {
     width: 33%;
 }
 
-#messages th, td {
-    padding: 10px;
+#messages th, #messages td {
     border-bottom: #1e1814 solid 1px;
     border-right: #1e1814 solid 1px;
 }
 
-#messages th {
-    font-size: 1.5em;
-    background-color: #423731;
-    color: #f9f2e5;
-}
 
 #messages td:nth-child(2n+1) {
     background-color: #9e8e85;
-    color: #f9f2e5
+    color: #f9f2e5;
     -webkit-transition: background-color 1s ease-out;
     -moz-transition: background-color 1s ease-out;
     -o-transition: background-color 1s ease-out;
